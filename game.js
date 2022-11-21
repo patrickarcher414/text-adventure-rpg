@@ -31,8 +31,8 @@ function showTextNode(textNodeIndex) {
 }
 
 function selectOption(option) {
-  const nextTextNodeId = option.nextText;
-  if(nextTextNodeId <= 0){
+  const nextTextNodeId = option.nextText
+  if (nextTextNodeId <= 0) {
     return startGame()
   }
   state = Object.assign(state, option.setState)
@@ -112,7 +112,7 @@ const textNodes = [
     options: [
       {
         text: 'Restart',
-        nexText: -1
+        nextText: -1
       }
     ]
   }
