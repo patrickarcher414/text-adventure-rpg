@@ -107,12 +107,81 @@ const textNodes = [
     ]
   },
   {
+    id: 5,
+    text: 'You close the door to the dusty closet and go to open the other door...',
+    options: [
+      {
+        text: 'Next',
+        nextText: 4
+      }
+    ]
+  },
+  {
+    id: 6,
+    text: 'You run down the dark hall back to the door which you came in. As you approach, it slams shut. You hear a deep voice resonate through the chamber.\"You have entered my lair, and awoken my minion. You cannot escape alive.\" The voice echoes, volume increasing, ending in an ear shattering tone.',
+    options: [
+      {
+        text: 'Turn to face the minion',
+        nextText: 11
+      },
+      {
+        text: 'Try to open the door',
+        nextText: 12
+      }
+    ]
+  },
+  {
+    id: 7,
+    text: 'Your fist meets the torso of the dark creature, and you feel an odd sensation. Not completely solid, nor fully gaseous, your hand slows to a stop obscured in the unnatural form before you. A tingling pain spreads up your arm, like simultaneous frostbite and burning, and your hand is shunted back out of the torso.',
+    options: [
+      {
+        
+      },
+    ]
+  },
+  {
+    id: 8,
+    text: 'The blade slices',
+    options: [
+      {},
+    ]
+  },
+  {
     id: 9,
-    text: 'The shadowy figure raises it\'s dark twisted claws and swipes at you vigorously. A cold numbing pain fills your body growing out from where you were cut. You begin to feel drowsy and fall to your knees... A tragic fate befell you. You have unfortunately perished.',
+    text: 'The shadowy figure raises it\'s dark twisted claws and swipes at you vigorously. A cold numbing pain fills your body growing out from where you were cut. You begin to feel drowsy and fall to your knees...',
+    options: [
+      {
+        text: 'Next',
+        nextText: 10
+      }
+    ]
+  },
+  {
+    id: 10,
+    text: 'A tragic fate befell you. You have unfortunately perished.',
     options: [
       {
         text: 'Restart',
         nextText: -1
+      }
+    ]
+  },
+  {
+    id: 11,
+    text: 'You turn on your heels and look up as the shadowy monster is quickly closing distance. You have moments to decide what to do.',
+    options: [
+      {
+        text: 'Slash at it with your blade.',
+        requiredState: (currentState) => currentState.smallBlade,
+        nextText: 8
+      },
+      {
+        text: 'Punch the shadowy figure.',
+        nextText: 7
+      },
+      {
+        text: 'Try to open the door',
+        nextText: 12
       }
     ]
   }
