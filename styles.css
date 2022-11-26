@@ -29,6 +29,10 @@ body {
   margin-top: 20px;
 }
 
+.btn {
+  transition: 250ms ease-in-out;
+}
+
 .btn:hover {
   translate: -5px -5px;
   box-shadow: 2px 2px 4px #444;
